@@ -1,5 +1,5 @@
 <?php
-namespace Slim\Middleware;
+namespace aalfiann\Slim\Middleware;
 class ETag {
 
     /**
