@@ -35,7 +35,7 @@ $app->get('/', function (Request $request, Response $response) {
 })
     // this etag middleware will check is current etag same as request etag or not?
     // if same then response header will be 304 Not Modified and empty body.
-    ->add(new EtagMiddleware('abc','strong'))
+    ->add(new ETag('abc','strong'))
     ->setName("/");
 
 $app->run();
